@@ -1,0 +1,528 @@
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+    --nav-link:#AB17DF;
+    --head-bg:#0C0324;
+    --head-border:#FFFFFF33;
+    --white:#fff;
+    --black: #000;
+    --submenu-bg:#4c14fc;
+    --gold-color:#FEAD10;
+    --p-text:#FFFFFF99;
+    --liquid:#0C032480;
+    --collection-bg:#FFFFFF12;
+    --roadmap-cards:#FFFFFF12;
+}
+body{
+    font-family: 'Rajdhani';
+    font-weight: 900;
+}
+p{
+     font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--p-text);
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+/* =======================================header-area==========================================*/
+.header-bg{
+    background-image: url(../img/bg-hero-home.png);
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    position: absolute;
+    z-index: -9398;
+}
+.header-area{
+    background-color: var(--head-bg);
+    border-bottom: 1px solid var(--head-border);
+}
+.header-area .navbar-nav li:nth-child(1) a{
+ color: var(--nav-link);
+ border-bottom: 3px solid var(--nav-link);
+}
+.navbar-nav{
+    padding: 2rem;
+}
+.header-area .navbar-nav li a{
+    color: var(--white);
+    font-family: 'Rajdhani';
+    font-weight: 900;
+    font-size: 18px;
+}
+.header-area .navbar-nav li a:hover{
+    color: var(--nav-link);
+    border-bottom: 3px solid var(--nav-link);
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--white);
+}
+.navbar-collapse .navbar-nav .dropdown:hover .dropdown-menu{
+    opacity: 1;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-menu{
+    opacity: 0;
+    display: block;
+    margin-top: 31px !important;
+    position: absolute;
+}
+.dropdown-menu li a:hover{
+ background-color: var(--submenu-bg);
+ border-bottom: 0px;
+ padding: 20px 20px;
+ color: #fff !important;
+ transition: 0.5s ease-out;
+}
+.dropdown-toggle::after{
+ display: none;
+}
+.dropdown-toggle i{
+ font-size: 12px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0px;
+}
+.navbar-toggler-icon{
+    background-image: url(../img/list.png);
+    width: 2em;
+    height: 2em;
+}
+.join-btn .btn{
+    color: var(--white);
+    background-color: transparent;
+    background-image: linear-gradient(90deg, var(--submenu-bg) 0%, var(--nav-link) 100%); 
+    padding: 7px 18px;
+    font-family: 'Rajdhani';
+    font-weight: 900;
+    font-size: 18px;
+}
+.join-hover:hover {
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-name: join-btn;
+    animation-timing-function: ease-out;
+}
+@keyframes join-btn {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* =======================================discover-area =======================================*/
+.discover-area{
+    background-color: var(--head-bg);
+    padding: 100px 0px 0px 0px;
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    z-index: -2898 !important;
+    background-image: url(../img/bg-hero-home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.discover-area .container{
+    z-index: 3787;
+}
+.border-disc{
+    border-bottom: 1px solid var(--head-border);
+}
+.discover-cap h1{
+    font-family: 'Rajdhani';
+    font-size: 81px;
+    color: var(--white);
+    font-weight: 600;
+    position: relative;
+    z-index: 1455;
+}
+.rectangle{
+    width: 144px;
+    height: 38px;
+    background-color:var(--gold-color);
+    position: absolute;
+    z-index: -1;
+    transform: translate(-132px,49px);
+}
+.discover-btn .btn{
+    color: var(--white);
+    background-color: transparent;
+    background-image: linear-gradient(90deg, var(--submenu-bg) 0%, var(--nav-link) 100%); 
+    padding: 12px 32px;
+    font-family: 'Rajdhani';
+    font-weight: 900;
+    font-size: 18px;
+}
+.discover-btn .btn:nth-child(2){
+    background-image:none;
+}
+.artists{
+    display: flex;
+}
+.artists h2{
+    font-size: 50px;
+    color: var(--white) !important;
+}
+.artists-p{
+    color: #A19AB1;
+}
+.hero-img-wrreper{
+    padding-top: 20px;
+    padding-left: 100px;
+    position: relative;
+}
+.hero-img-bg {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, var(--submenu-bg) 0%, var(--nav-link) 100%);
+    width: 83%;
+    height: 500px;
+    padding: 2px;
+    border-radius: 10px;  
+    position: relative;
+}
+.hero-main-img{
+    background-color: var(--head-bg);
+    border-radius: 10px;
+    height: 100% !important;
+}
+.hero-img-wrreper img {
+    border-radius: 10px;
+    margin: -20px 0px 0px -20px;
+}
+/*========================================== story============================================= */
+.story{
+    background-color: var(--head-bg);
+}
+.story .story-logo img{
+    margin-right: 50px;
+    opacity: 0.3;
+    transition: 0.5s ease-in-out;
+}
+.story .story-logo img:hover{
+    opacity: 1;
+}
+.story-img h4{
+    position: absolute;
+    bottom: 3%;
+    left: 6%;
+    color: var(--white);
+    z-index: 5;
+    padding: 24px 117px 24px 32px;
+}
+h6{
+    color: var(--gold-color) !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+h2{
+    font-size: 75px;
+}
+/* ========================================collection=========================================*/
+.collection{
+    background-color: var(--head-bg);
+    background-position: top left;
+    background-image: url(../img/bg-boxstar.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 100px 0px;
+}
+.collection-img-bg{
+    background-color: var(--collection-bg);
+    padding: 10px;
+}
+h4{
+    margin-bottom: 0px;
+}
+.collection-img-cap {
+    background-color: var(--liquid);
+}
+/*=========================================== roadmap =========================================*/
+.roadmap{
+    background-image: url(../img/bg-boxstar.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: var(--head-bg);
+    position: relative;
+    padding-bottom: 100px;
+}
+.roadmap-bg-stars{
+    background-image: url(../img/noise.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.roadmap-cards-cap{
+    background-color: var(--roadmap-cards) ;
+    padding: 32px;
+}
+.roadmap-cards-cap h6{
+    border-right: 2px solid var(--head-border);
+}
+.card .card-body h6{
+ border-right: 2px solid var(--head-border);
+ width: 14%;
+}
+.card .card-body h4{
+    width: 86%;
+}
+.card-body{
+    background-color: var(--roadmap-cards) !important;
+}
+.bg-light-img{
+    background-image: url(../img/elipse-4.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+.space-img img{
+    height: 500px;
+}
+/*============================================== faq ==========================================*/
+.faq{
+    background-color: var(--head-bg);
+    padding: 50px 0px 350px 0px;
+    margin-bottom: -250px;
+}
+.faq-cap{
+    background-color: var(--head-bg) !important;
+    border: 0px solid black;
+}
+.accordion-button::after{
+     background-image: url(../img/pngwing.com\ \(2\).png);
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../img/pngwing.com\ \(2\).png);
+}
+.light-img{
+position: absolute;
+z-index: 99;
+}
+/* ===========================================team ============================================*/
+.team-bg-round img{ 
+ position: absolute;
+ right: 0%;
+ top: 0%;
+ transform: translateY(400px);
+}
+.elipse-top-left{
+position: absolute;
+left: 0%;
+top: 0%;
+width: 30%;
+z-index: 108;
+}
+.team{
+background-color: var(--head-bg);
+ padding-bottom: 150px; 
+}
+.team-area .team-img .card{
+ background-color: var(--roadmap-cards);
+}
+.team-area .team-img .card img{
+    border-radius: 20px;
+    padding: 10px;
+}
+.card .card-body h5{
+    font-size: 18px;
+}
+.team-img .card .card-body p{
+    font-size: 13px;
+}
+.team-img .card .card-body {
+    background-color: var(--liquid) !important;
+    padding: 6px 10px 10px 10px !important;
+    z-index: 384;
+}
+.social-icon-team .icon-team li{
+    margin: 0px 5px;
+    background-color: var(--nav-link);
+    padding:2px 8px;
+    border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+.social-icon-team .icon-team li:hover a{
+    color: var(--nav-link);
+}
+.social-icon-team .icon-team li:hover{
+    transform: scale(1.05);
+    background-color: var(--white);
+}
+.social-icon-team .icon-team li a{
+    font-size: 14px;
+    color: var(--white);
+}
+/*======================================== TESTIMONIALS========================================= */
+.TESTIMONIALS-area{
+    background-color: var(--head-bg);
+}
+.TESTIMONIALS-img img{
+    border-radius: 30px;
+    width: 45%;
+    margin-left: -20px;
+}
+.Awesome-Service{
+    background-color: var(--collection-bg);
+    padding: 64px 64px 64px 64px;
+    margin: 32px 0px 0px 0px;
+}
+.Awesome-Service h3{
+    font-size: 36px;
+}
+.Tommy-Burton img{
+    width: 15%;
+}
+.Tommy-Burton p{
+    font-size: 13px;
+}
+/*========================================= Merchandise =======================================*/
+.Merchandise{
+    position: relative;
+}
+.Merchandise-area{
+    background-color: var(--head-bg);
+    padding: 100px 0px;
+}
+.Merchandise-bg-img img{
+ position: absolute;
+ top: 0%;
+ width: 65%;
+ left: 0%;
+}
+.Merchandise .card{
+    background-color: var(--roadmap-cards) !important;
+}
+.Merchandise .card .card-body{
+    background-color: transparent !important;
+}
+.Merchandise .card .rating i{
+    color: var(--gold-color);
+}
+.Merchandise .card .card-body p{
+    font-family: 'Rajdhani';
+    font-size: 19px;
+}
+.add-cart-btn button{
+    background-color: var(--nav-link);
+    color: var(--white);
+    font-size: 18px;
+    padding: 8px 16px;
+}
+.add-cart-btn button:hover{
+    background-color: var(--white);
+    color: var(--nav-link);
+}
+/*============================================== blog =========================================*/
+.blog-area{
+    background-color: var(--head-bg);
+    padding-bottom: 100px;
+}
+.blog-card{
+    background-color: var(--roadmap-cards);
+}
+.blog-card p{
+    font-size: 14px;
+}
+.blog-card-cap{
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+.blog-card .blog-card-cap a{
+    font-size: 18px !important; 
+    color: var(--nav-link) !important;
+}
+.blog-card .blog-card-cap a i{
+ font-size: 10px;
+ transform: translateY(-1px);
+}
+/*=========================================== footer-area ======================================*/
+.footer-area{
+    padding: 30px 0px; 
+    background-color: var(--head-bg);
+}
+.footer-main{
+    background-color: transparent;
+    background-image: linear-gradient(90deg, var(--submenu-bg) 0%, var(--nav-link) 100%);
+}
+.footer-ng-img{
+    background-image: url(../img/noise-footer.png);
+}
+.footer-cap{
+    padding: 64px;
+}
+.footer-area .footer-main h3{
+    font-size: 36px;
+}
+.email-input input{
+    font-family: 'Poppins';  
+    padding:16px !important;
+    border: none;
+}
+input:focus{
+    border: none;
+}
+.footer-right .foot-social ul li{
+    padding: 0px 10px;
+}
+.footer-right .foot-social ul li a i{
+ color: var(--white);
+ font-size: 18px; 
+ transition: 0.5s ease-out;
+}
+.footer-right .foot-social ul li:hover a i{
+    color: var(--gold-color);
+    transform: translateY(-8px);
+}
+.footer-end .footer-nav ul li {
+    padding: 2px 0px;
+}
+.footer-end .footer-nav ul li a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Karla';
+    font-weight: 500;
+    transition: .3s ease-out;
+}
+.footer-end .footer-nav ul li:hover a{
+    color: var(--gold-color);
+}
+/*========================================== copy============================================= */
+.copy{
+    background-color: var(--head-bg);
+    font-family: 'Karla';
+    font-weight: 300;
+    color: var(--p-text);
+}
+.copy .copy-cap{
+    font-size: 14px; 
+}
+.copy .copy-cap ul li{
+    padding: 0px 20px;
+}
+.copy .copy-cap ul li a{
+    color: var(--p-text);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.copy .copy-cap ul li:hover a{
+    color: var(--nav-link);
+}
